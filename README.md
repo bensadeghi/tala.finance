@@ -2,7 +2,7 @@
 
 An Ethereum blockchain DApp, built using [Truffle](https://www.trufflesuite.com/), [ReactJS](https://reactjs.org/) and upgradable [OpenZeppelin](https://openzeppelin.com/)-based smart contracts
 
-DApp deployed [here]()
+DApp deployed [here](https://bensadeghi.github.io/tala.finance/)
 
 Contracts deployed on Ropsten Test Network ([get test Ether](https://faucet.dimensions.network/))
 * ERC20 Token  - 0x17064212fe45446289fA6a598B206DD599e79B07
