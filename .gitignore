@@ -1,0 +1,9 @@
+.env
+.openzeppelin
+truffle-config.js
+build
+node_modules
+client/node_modules
+client/src/contracts
+package-lock.json
+client/package-lock.json
