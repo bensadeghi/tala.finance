@@ -141,9 +141,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Tala Factory</h1>
+        <p>Deployed on Ropsten Testnet <a href="https://faucet.dimensions.network/">(get test Ether)</a></p>
+        <p>TALA Address: <a href="https://ropsten.etherscan.io/token/0x17064212fe45446289fa6a598b206dd599e79b07">0x17064212fe45446289fA6a598B206DD599e79B07</a></p>
         <h2>Swap ETH for TALA</h2>
         <h3>1 ETH = {this.state.rate} TALA</h3>
-        <p>TALA Address: <a href="https://ropsten.etherscan.io/token/0x17064212fe45446289fa6a598b206dd599e79b07">0x17064212fe45446289fA6a598B206DD599e79B07</a></p>
         <h4>Total Supply: {this.state.totalSupply} TALA</h4>
         <p>Your Wallet:</p>
         {this.state.userTala} TALA
