@@ -4,7 +4,7 @@ An Ethereum blockchain DApp, built using [Truffle](https://www.trufflesuite.com/
 
 DApp deployed [here](https://bensadeghi.github.io/tala.finance/)
 
-Contracts deployed on Ropsten Test Network ([get test Ether](https://faucet.dimensions.network/))
-* ERC20 Token  - 0x17064212fe45446289fA6a598B206DD599e79B07
+Contracts deployed on Ropsten Test Network
+* ERC20 Token  - [0x17064212fe45446289fA6a598B206DD599e79B07](https://ropsten.etherscan.io/token/0x17064212fe45446289fa6a598b206dd599e79b07)
 * Crowdsale    - 0xC1277D790AA569c049edDE8aAb008834465f911e
 * Staking Pool - 0x4f237d431a4aBa42Bbfa61b606c8406E61F2696c
