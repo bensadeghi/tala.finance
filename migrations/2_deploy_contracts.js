@@ -18,6 +18,4 @@ module.exports = async function (deployer) {
     await tokenInstance.grantRole(minterRole, saleInstance.address);
     await tokenInstance.grantRole(minterRole, poolInstance.address);
 
-  //const instance = await deployProxy(TalaToken, [42], { deployer, initializer: 'store' });
-  //const upgraded = await upgradeProxy(instance.address, BoxV2, { deployer, initializer: 'store' });
 }
