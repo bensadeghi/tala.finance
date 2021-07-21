@@ -42,9 +42,7 @@ class App extends Component {
 
     } catch (error) {
       // Catch any errors for any of the above operations.
-      alert(
-        `Failed to load web3, accounts, or contract. Check console for details.`,
-      );
+      alert("Connect to MetaMask Wallet");
       console.error(error);
     }
   };
@@ -127,22 +125,32 @@ class App extends Component {
   }
 
   handleMax = async (event) => {
-    const target = event.target;
-    if (target.name === "buyAmountETH") {this.setState({buyAmountETH: this.state.userETH})};
-    if (target.name === "deposit")      {this.setState({deposit: this.state.userTala})};
-    if (target.name === "withdraw")     {this.setState({withdraw: this.state.stakeBalance})};
+    const name = event.target.name;
+    switch(name) {
+      case "buyAmountETH":
+        this.setState({buyAmountETH: this.state.userETH});
+        break;
+      case "deposit":
+        this.setState({deposit: this.state.userTala});
+        break;
+      case "withdraw":
+        this.setState({withdraw: this.state.stakeBalance});
+        break;
+      default:
+        break;
+    }
   }
 
 
   render() {
     if (!this.state.loaded) {
-      return <div>Loading Web3, accounts, and contract...</div>;
+      // return <div>Loading Web3, accounts, and contract...</div>;
     }
     return (
       <div className="App">
         <h1>Tala Factory</h1>
-        <p>Deployed on Ropsten Testnet <a href="https://faucet.dimensions.network/">(get test Ether)</a></p>
-        <p>TALA Address: <a href="https://ropsten.etherscan.io/token/0x17064212fe45446289fa6a598b206dd599e79b07">0x17064212fe45446289fA6a598B206DD599e79B07</a></p>
+        <p>Deployed on Ropsten Testnet <a href="https://faucet.dimensions.network/" target="_blank" rel="noopener noreferrer">(get test Ether)</a></p>
+        <p>TALA Address: <a href="https://ropsten.etherscan.io/token/0x17064212fe45446289fa6a598b206dd599e79b07" target="_blank" rel="noopener noreferrer">0x17064212fe45446289fA6a598B206DD599e79B07</a></p>
         <h2>Swap ETH for TALA</h2>
         <h3>1 ETH = {this.state.rate} TALA</h3>
         <h4>Total Supply: {this.state.totalSupply} TALA</h4>
@@ -166,6 +174,8 @@ class App extends Component {
         <button type="button" onClick={this.handleWithdraw}>Withdraw</button>
         <p>Your Reward Balance: {this.state.rewardBalance} TALA</p>
         <button type="button" onClick={this.handleClaim}>Claim Reward</button>
+        <br></br>
+        <br></br>
       </div>
     );
   }
