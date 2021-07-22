@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "35a9673c7385e98819274fbe0bbb2054",
+    "revision": "1959b85084ee4bfca3c92102f5ef25b4",
     "url": "/tala.finance/index.html"
   },
   {
