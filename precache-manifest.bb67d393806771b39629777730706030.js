@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d730a855e3142cc9c825afd7c4ce9c0e",
+    "revision": "71cc7ed964803dfbcc2afe973de022a3",
     "url": "/tala.finance/index.html"
   },
   {
-    "revision": "55c5999fbc0d50ef0b68",
-    "url": "/tala.finance/static/css/main.a08e151f.chunk.css"
+    "revision": "071a5388f721e53f3b9d",
+    "url": "/tala.finance/static/css/main.f592c600.chunk.css"
   },
   {
     "revision": "ebc71f3ad3564303fe41",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tala.finance/static/js/2.f6832e3d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "55c5999fbc0d50ef0b68",
-    "url": "/tala.finance/static/js/main.1d231bf0.chunk.js"
+    "revision": "071a5388f721e53f3b9d",
+    "url": "/tala.finance/static/js/main.81f09c4d.chunk.js"
   },
   {
     "revision": "c475366113e83f42381b",
