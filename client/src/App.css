@@ -1,5 +1,5 @@
 body {
-  background-color: #ffe999;
+  background-color: #c6c6c6;
 }
 
 .App {
@@ -23,4 +23,30 @@ body {
 
 .App-link {
   color: #09d3ac;
+}
+
+.button {
+  width: 20%;
+}
+
+.buttonM {
+  width: 10%;
+}
+
+.input {
+  width: 30%;
+}
+
+.rcorners {
+  margin: auto;
+  border-radius: 10px;
+  background: #73AD21;
+  padding: 20px;
+  width: 67%;
+  height: 100%;
+  background-color: #ffe999;
+}
+
+.small {
+  font-size: small;
 }
