@@ -2,6 +2,11 @@ body {
   background-color: #c6c6c6;
 }
 
+h1 {
+  color: #ffe999;
+  -webkit-text-stroke: 1px black;
+}
+
 .App {
   text-align: center;
 }

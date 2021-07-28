@@ -51,6 +51,7 @@ class App extends Component {
     let rate = await this.saleInstance.methods.rate().call();
     this.setState({ rate: rate });
   }
+
   updateTokens = async () => {
     let totalSupply = this.fromWei(await this.tokenInstance.methods.totalSupply().call());
     let userTala = this.fromWei(await this.tokenInstance.methods.balanceOf(this.accounts[0]).call());
@@ -149,7 +150,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Tala Finance</h1>
-        <p class="small">Deployed on Ropsten Testnet <a href="https://faucet.dimensions.network/" target="_blank" rel="noopener noreferrer">(get test Ether)</a></p>
+        <p>Deployed on Ropsten Testnet <a href="https://faucet.dimensions.network/" target="_blank" rel="noopener noreferrer">(get test Ether)</a></p>
         <p class="small">TALA Address: <a href="https://ropsten.etherscan.io/token/0x17064212fe45446289fa6a598b206dd599e79b07" target="_blank" rel="noopener noreferrer">0x17064212fe45446289fA6a598B206DD599e79B07</a></p>
         <div class="rcorners">
           <h2>Swap ETH for TALA</h2>
@@ -162,7 +163,7 @@ class App extends Component {
         </div>
         <br></br>
         <div class="rcorners">
-          <h2>Stake TALA & Earn Rewards</h2>
+          <h2>Stake TALA, Earn Reward</h2>
           <p>Deposit Balance: {Number(this.state.stakeBalance).toPrecision(5)} TALA</p>
           <input type="text" class="input" name="deposit" value={this.state.deposit} onChange={this.handleInputChange} />
           <button type="button" class="buttonM" name="deposit" onClick={this.handleMax}>Max</button>
