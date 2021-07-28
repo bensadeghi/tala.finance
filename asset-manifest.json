@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/tala.finance/static/css/main.a9873e29.chunk.css",
-    "main.js": "/tala.finance/static/js/main.3c9a3534.chunk.js",
-    "main.js.map": "/tala.finance/static/js/main.3c9a3534.chunk.js.map",
+    "main.css": "/tala.finance/static/css/main.5c83b2e1.chunk.css",
+    "main.js": "/tala.finance/static/js/main.f43cd6a3.chunk.js",
+    "main.js.map": "/tala.finance/static/js/main.f43cd6a3.chunk.js.map",
     "runtime-main.js": "/tala.finance/static/js/runtime-main.34d66361.js",
     "runtime-main.js.map": "/tala.finance/static/js/runtime-main.34d66361.js.map",
-    "static/js/2.148449e9.chunk.js": "/tala.finance/static/js/2.148449e9.chunk.js",
-    "static/js/2.148449e9.chunk.js.map": "/tala.finance/static/js/2.148449e9.chunk.js.map",
+    "static/js/2.f6832e3d.chunk.js": "/tala.finance/static/js/2.f6832e3d.chunk.js",
+    "static/js/2.f6832e3d.chunk.js.map": "/tala.finance/static/js/2.f6832e3d.chunk.js.map",
     "index.html": "/tala.finance/index.html",
-    "precache-manifest.f9734180c8fc864bc81e3a22290fc886.js": "/tala.finance/precache-manifest.f9734180c8fc864bc81e3a22290fc886.js",
+    "precache-manifest.14d7257c91ca70d0004420daf4811835.js": "/tala.finance/precache-manifest.14d7257c91ca70d0004420daf4811835.js",
     "service-worker.js": "/tala.finance/service-worker.js",
-    "static/css/main.a9873e29.chunk.css.map": "/tala.finance/static/css/main.a9873e29.chunk.css.map",
-    "static/js/2.148449e9.chunk.js.LICENSE.txt": "/tala.finance/static/js/2.148449e9.chunk.js.LICENSE.txt"
+    "static/css/main.5c83b2e1.chunk.css.map": "/tala.finance/static/css/main.5c83b2e1.chunk.css.map",
+    "static/js/2.f6832e3d.chunk.js.LICENSE.txt": "/tala.finance/static/js/2.f6832e3d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.34d66361.js",
-    "static/js/2.148449e9.chunk.js",
-    "static/css/main.a9873e29.chunk.css",
-    "static/js/main.3c9a3534.chunk.js"
+    "static/js/2.f6832e3d.chunk.js",
+    "static/css/main.5c83b2e1.chunk.css",
+    "static/js/main.f43cd6a3.chunk.js"
   ]
 }
