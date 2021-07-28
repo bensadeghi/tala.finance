@@ -154,16 +154,16 @@ class App extends Component {
         <div class="rcorners">
           <h2>Swap ETH for TALA</h2>
           <h3>1 ETH = {this.state.rate} TALA</h3>
-          <h4>Total Supply: {Number(this.state.totalSupply).toPrecision(6)} TALA</h4>
-          <p>In Wallet: {Number(this.state.userTala).toPrecision(6)} TALA and {Number(this.state.userETH).toPrecision(6)} ETH</p>
+          <h4>Total Supply: {Number(this.state.totalSupply).toPrecision(8)} TALA</h4>
+          <p>In Wallet: {Number(this.state.userTala).toPrecision(5)} TALA & {Number(this.state.userETH).toPrecision(5)} ETH</p>
           <input type="text" class="input" name="buyAmountETH" value={this.state.buyAmountETH} onChange={this.handleInputChange} />
           <button type="button" class="buttonM" name="buyAmountETH" onClick={this.handleMax}>Max</button>
           <button type="button" class="button" onClick={this.handleBuyTokens}>Swap ETH</button>
         </div>
         <br></br>
         <div class="rcorners">
-          <h2>Stake TALA and Earn Rewards</h2>
-          <p>Deposit Balance: {Number(this.state.stakeBalance).toPrecision(6)} TALA</p>
+          <h2>Stake TALA & Earn Rewards</h2>
+          <p>Deposit Balance: {Number(this.state.stakeBalance).toPrecision(5)} TALA</p>
           <input type="text" class="input" name="deposit" value={this.state.deposit} onChange={this.handleInputChange} />
           <button type="button" class="buttonM" name="deposit" onClick={this.handleMax}>Max</button>
           <button type="button" class="button" onClick={this.handleDeposit}>Deposit</button>
@@ -171,7 +171,7 @@ class App extends Component {
           <input type="text" class="input" name="withdraw" value={this.state.withdraw} onChange={this.handleInputChange}/>
           <button type="button" class="buttonM" name="withdraw" onClick={this.handleMax}>Max</button>
           <button type="button" class="button" onClick={this.handleWithdraw}>Withdraw</button>
-          <p>Reward Balance: {Number(this.state.rewardBalance).toPrecision(6)} TALA</p>
+          <p>Reward Balance: {Number(this.state.rewardBalance).toPrecision(5)} TALA</p>
           <button type="button" onClick={this.handleClaim}>Claim Reward</button>
         </div>
         <br></br>
