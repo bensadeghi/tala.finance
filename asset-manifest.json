@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tala.finance/static/css/main.c948b59d.chunk.css",
+    "main.css": "/tala.finance/static/css/main.a08e151f.chunk.css",
     "main.js": "/tala.finance/static/js/main.f43cd6a3.chunk.js",
     "main.js.map": "/tala.finance/static/js/main.f43cd6a3.chunk.js.map",
     "runtime-main.js": "/tala.finance/static/js/runtime-main.34d66361.js",
@@ -8,15 +8,15 @@
     "static/js/2.f6832e3d.chunk.js": "/tala.finance/static/js/2.f6832e3d.chunk.js",
     "static/js/2.f6832e3d.chunk.js.map": "/tala.finance/static/js/2.f6832e3d.chunk.js.map",
     "index.html": "/tala.finance/index.html",
-    "precache-manifest.d84d5395499985132f9d790a3b1a1aef.js": "/tala.finance/precache-manifest.d84d5395499985132f9d790a3b1a1aef.js",
+    "precache-manifest.04ef6725a5fb238f2314d294ef1e765e.js": "/tala.finance/precache-manifest.04ef6725a5fb238f2314d294ef1e765e.js",
     "service-worker.js": "/tala.finance/service-worker.js",
-    "static/css/main.c948b59d.chunk.css.map": "/tala.finance/static/css/main.c948b59d.chunk.css.map",
+    "static/css/main.a08e151f.chunk.css.map": "/tala.finance/static/css/main.a08e151f.chunk.css.map",
     "static/js/2.f6832e3d.chunk.js.LICENSE.txt": "/tala.finance/static/js/2.f6832e3d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.34d66361.js",
     "static/js/2.f6832e3d.chunk.js",
-    "static/css/main.c948b59d.chunk.css",
+    "static/css/main.a08e151f.chunk.css",
     "static/js/main.f43cd6a3.chunk.js"
   ]
 }
