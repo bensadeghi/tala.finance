@@ -1,33 +1,15 @@
 body {
-  background-color: #c6c6c6;
-}
-
-h1 {
-  color: #ffe999;
-  -webkit-text-stroke: 1px black;
-}
-
-.App {
+  background-color: black;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.gold {
+  color: #ffe999;
+  background-color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+a:link, a:visited {
+  color: #ffe999;
 }
 
 .button {
@@ -40,13 +22,14 @@ h1 {
 
 .input {
   width: 40%;
+  background-color: #EEE;
 }
 
 .rcorners {
   margin: auto;
   border-radius: 10px;
-  background: #73AD21;
   padding: 20px;
+  padding-top: 1px;
   width: 325px;
   height: 100%;
   background-color: #ffe999;

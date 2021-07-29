@@ -42,7 +42,7 @@ class App extends Component {
 
     } catch (error) {
       // Catch any errors for any of the above operations.
-      alert("Connect to MetaMask Wallet");
+      alert("Connect to MetaMask Wallet - Ropsten Testnet");
       console.error(error);
     }
   };
@@ -149,33 +149,34 @@ class App extends Component {
     }
     return (
       <div className="App">
-        <h1>Tala Finance</h1>
-        <p>Deployed on Ropsten Testnet <a href="https://faucet.dimensions.network/" target="_blank" rel="noopener noreferrer">(get test Ether)</a></p>
-        <p class="small">TALA Address: <a href="https://ropsten.etherscan.io/token/0x17064212fe45446289fa6a598b206dd599e79b07" target="_blank" rel="noopener noreferrer">0x17064212fe45446289fA6a598B206DD599e79B07</a></p>
+        <div class="gold">
+          <h1>Tala Finance</h1>
+          <p>Deployed on Ropsten Testnet <a href="https://faucet.dimensions.network/" target="_blank" rel="noopener noreferrer">[get test Ether]</a></p>
+          <p class="small">TALA Address: <a href="https://ropsten.etherscan.io/token/0x17064212fe45446289fa6a598b206dd599e79b07" target="_blank" rel="noopener noreferrer">0x17064212fe45446289fA6a598B206DD599e79B07</a></p>
+        </div>
         <div class="rcorners">
           <h2>Swap ETH for TALA</h2>
           <h3>1 ETH = {this.state.rate} TALA</h3>
-          <h4>Total Supply: {Number(this.state.totalSupply).toPrecision(8)} TALA</h4>
+          <h4>Total Supply: {Number(this.state.totalSupply).toPrecision(10)}</h4>
           <p>In Wallet: {Number(this.state.userTala).toPrecision(5)} TALA & {Number(this.state.userETH).toPrecision(5)} ETH</p>
           <input type="text" class="input" name="buyAmountETH" value={this.state.buyAmountETH} onChange={this.handleInputChange} />
-          <button type="button" class="buttonM" name="buyAmountETH" onClick={this.handleMax}>Max</button>
-          <button type="button" class="button" onClick={this.handleBuyTokens}>Swap ETH</button>
+          <button type="button" class="buttonM gold" name="buyAmountETH" onClick={this.handleMax}>Max</button>
+          <button type="button" class="button gold" onClick={this.handleBuyTokens}>Swap ETH</button>
         </div>
         <br></br>
         <div class="rcorners">
           <h2>Stake TALA, Earn Reward</h2>
           <p>Deposit Balance: {Number(this.state.stakeBalance).toPrecision(5)} TALA</p>
           <input type="text" class="input" name="deposit" value={this.state.deposit} onChange={this.handleInputChange} />
-          <button type="button" class="buttonM" name="deposit" onClick={this.handleMax}>Max</button>
-          <button type="button" class="button" onClick={this.handleDeposit}>Deposit</button>
+          <button type="button" class="buttonM gold" name="deposit" onClick={this.handleMax}>Max</button>
+          <button type="button" class="button gold" onClick={this.handleDeposit}>Deposit</button>
           <br></br>
           <input type="text" class="input" name="withdraw" value={this.state.withdraw} onChange={this.handleInputChange}/>
-          <button type="button" class="buttonM" name="withdraw" onClick={this.handleMax}>Max</button>
-          <button type="button" class="button" onClick={this.handleWithdraw}>Withdraw</button>
+          <button type="button" class="buttonM gold" name="withdraw" onClick={this.handleMax}>Max</button>
+          <button type="button" class="button gold" onClick={this.handleWithdraw}>Withdraw</button>
           <p>Reward Balance: {Number(this.state.rewardBalance).toPrecision(5)} TALA</p>
-          <button type="button" onClick={this.handleClaim}>Claim Reward</button>
+          <button type="button" class="gold" onClick={this.handleClaim}>Claim Reward</button>
         </div>
-        <br></br>
         <br></br>
       </div>
     );
