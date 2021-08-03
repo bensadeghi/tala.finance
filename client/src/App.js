@@ -42,7 +42,7 @@ class App extends Component {
 
     } catch (error) {
       // Catch any errors for any of the above operations.
-      alert("Connect to MetaMask Wallet - Ropsten Testnet");
+      alert("Failed to load. See console logs");
       console.error(error);
     }
   };
@@ -54,17 +54,22 @@ class App extends Component {
 
   updateTokens = async () => {
     let totalSupply = this.fromWei(await this.tokenInstance.methods.totalSupply().call());
-    let userTala = this.fromWei(await this.tokenInstance.methods.balanceOf(this.accounts[0]).call());
-    let userETH = this.fromWei(await this.web3.eth.getBalance(this.accounts[0]));
-    let stakeBalance = this.fromWei(await this.poolInstance.methods.stakeBalance().call({from:this.accounts[0]}));
-    let rewardBalance = this.fromWei(await this.poolInstance.methods.rewardBalance().call({from:this.accounts[0]}));
     this.setState({
-      totalSupply: totalSupply,
-      userTala: userTala,
-      userETH: userETH,
-      stakeBalance: stakeBalance,
-      rewardBalance: rewardBalance
+      totalSupply: totalSupply
     });
+
+    if (this.accounts[0]) {
+      let userTala = this.fromWei(await this.tokenInstance.methods.balanceOf(this.accounts[0]).call());
+      let userETH = this.fromWei(await this.web3.eth.getBalance(this.accounts[0]));
+      let stakeBalance = this.fromWei(await this.poolInstance.methods.stakeBalance().call({from:this.accounts[0]}));
+      let rewardBalance = this.fromWei(await this.poolInstance.methods.rewardBalance().call({from:this.accounts[0]}));
+      this.setState({
+        userTala: userTala,
+        userETH: userETH,
+        stakeBalance: stakeBalance,
+        rewardBalance: rewardBalance
+      });
+    }
   }
 
   handleInputChange = (event) => {

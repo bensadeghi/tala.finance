@@ -23,13 +23,14 @@ const getWeb3 = () =>
         console.log("Injected web3 detected.");
         resolve(web3);
       }
-      // Fallback to localhost; use dev console port by default...
+      // Fallback to Infura RPC...
       else {
         const provider = new Web3.providers.HttpProvider(
-          "http://127.0.0.1:8545"
+          "https://ropsten.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161" // MetaMask key
         );
         const web3 = new Web3(provider);
-        console.log("No web3 instance injected, using Local web3.");
+        alert("Connect to MetaMask Wallet - Ropsten Testnet");
+        console.log("No web3 instance injected, using Infura RPC.");
         resolve(web3);
       }
     });
