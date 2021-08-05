@@ -42,7 +42,7 @@ class App extends Component {
 
     } catch (error) {
       // Catch any errors for any of the above operations.
-      alert("Failed to load. See console logs");
+      alert("Connect to Ropsten Testnet");
       console.error(error);
     }
   };
