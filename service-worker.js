@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tala.finance/precache-manifest.9fb3d2dbc9f3f33f48f2cfc8e84af1ba.js"
+  "/tala.finance/precache-manifest.ece9028a1edca4aa850163cf1081d0d5.js"
 );
 
 self.addEventListener('message', (event) => {
