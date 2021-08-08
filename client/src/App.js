@@ -127,7 +127,9 @@ class App extends Component {
   }
 
   handleClaim = async () => {
-    await this.poolInstance.methods.claimReward().send({from: this.accounts[0]});
+    if (Number(this.state.rewardBalance) > 0) {
+      await this.poolInstance.methods.claimReward().send({from: this.accounts[0]});
+    }
   }
 
   handleMax = async (event) => {
